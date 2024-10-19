@@ -3,7 +3,8 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "pxt-typed-arrays": "github:robo-technical-group/pxt-typed-arrays#v0.0.1"
     },
     "files": [
         "README.md",
