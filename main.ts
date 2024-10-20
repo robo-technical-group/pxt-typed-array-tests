@@ -10,11 +10,9 @@ if (!TypedArraysTests.run()) {
 }
 
 // DataView constructors.
-/*
 if (!DataViewTests.run()) {
     allPassed = false
 }
-*/
 
 if (allPassed) {
     game.splash("All tests passed!")
