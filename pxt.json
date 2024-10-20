@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-typed-arrays": "github:robo-technical-group/pxt-typed-arrays#v1.0.0"
+        "pxt-typed-arrays": "github:robo-technical-group/pxt-typed-arrays#v1.1.0"
     },
     "files": [
         "README.md",

@@ -21,3 +21,15 @@ function areEquivalent2(a: TypedArray, b: TypedArray): boolean {
     }
     return true
 }
+
+function areEquivalent3(a: number[], b: ArrayBuffer): boolean {
+    if (a.length != b.byteLength) {
+        return false
+    }
+    for (let i: number = 0; i < a.length; i++) {
+        if (a[i] != b.bytes[i]) {
+            return false
+        }
+    }
+    return true
+}
