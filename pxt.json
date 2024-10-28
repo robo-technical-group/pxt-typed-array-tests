@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "pxt-typed-arrays": "github:robo-technical-group/pxt-typed-arrays#v1.1.0"
+        "pxt-typed-arrays": "github:robo-technical-group/pxt-typed-arrays#v1.2.0"
     },
     "files": [
         "README.md",
@@ -13,7 +13,8 @@
         "arraybuffer.ts",
         "dataview.ts",
         "typedarrays.ts",
-        "common.ts"
+        "common.ts",
+        "base64.ts"
     ],
     "testFiles": [
         "test.ts"

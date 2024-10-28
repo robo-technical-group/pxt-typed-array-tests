@@ -14,6 +14,11 @@ if (!DataViewTests.run()) {
     allPassed = false
 }
 
+// Bas64 tests.
+if (!B64Tests.run()) {
+    allPassed = false
+}
+
 if (allPassed) {
     game.splash("All tests passed!")
 } else {
