@@ -259,21 +259,25 @@ namespace TypedArraysTests {
             game.splash("Type arrays constructor tests II-7c failed.")
             allPassed = false
         }
-        if (int8.get(5) != 7) {
+        if (int8.get(0) != 2) {
             game.splash("Type arrays constructor tests II-7d failed.")
+            allPassed = false
+        }
+        if (int8.get(5) != 7) {
+            game.splash("Type arrays constructor tests II-7e failed.")
             allPassed = false
         }
         int8.setFromArray([112,])
         if (int8.get(0) != 112) {
-            game.splash("Type arrays constructor tests II-7e failed.")
-            allPassed = false
-        }
-        if (int8.get(-1) !== undefined) {
             game.splash("Type arrays constructor tests II-7f failed.")
             allPassed = false
         }
-        if (int8.get(6) !== undefined) {
+        if (int8.get(-1) !== undefined) {
             game.splash("Type arrays constructor tests II-7g failed.")
+            allPassed = false
+        }
+        if (int8.get(6) !== undefined) {
+            game.splash("Type arrays constructor tests II-7h failed.")
             allPassed = false
         }
 
@@ -350,14 +354,6 @@ namespace TypedArraysTests {
 
         try {
             int8.fromArrayBuffer(rawbuf, 0, 9)
-            game.splash("Type arrays constructor tests II-8h failed.")
-            allPassed = false
-        } catch {
-
-        }
-
-        try {
-            int8.fromArrayBuffer(rawbuf, 8, 1)
             game.splash("Type arrays constructor tests II-8i failed.")
             allPassed = false
         } catch {
@@ -365,8 +361,16 @@ namespace TypedArraysTests {
         }
 
         try {
-            int8.fromArrayBuffer(rawbuf, 9, -1)
+            int8.fromArrayBuffer(rawbuf, 8, 1)
             game.splash("Type arrays constructor tests II-8j failed.")
+            allPassed = false
+        } catch {
+
+        }
+
+        try {
+            int8.fromArrayBuffer(rawbuf, 9, -1)
+            game.splash("Type arrays constructor tests II-8k failed.")
             allPassed = false
         } catch {
 
